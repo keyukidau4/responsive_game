@@ -1,98 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- custom css link -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- boxicon link -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- swipe link -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <title>Responsive Game Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header>
-        <!-- navbar -->
-        <div class="nav container">
-            <!-- logo -->
-            <a href="#home" class="logo">Game <span>Store</span></a>
-            <!-- nav icons -->
-            <div class="nav-icons">
-                <i class='bx bx-bell  bx-tada' id="bell-icon"><span></span></i>
-                <i class='bx bx-download'></i>
-                <div class="menu-icon">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </div>
-            <!-- menu -->
-            <div class="menu">
-                <img src="./images/games-icon-png.png" alt="">
-                <div class="navbar">
-                    <a href="#home">home</a>
-                    <a href="#trending">trending</a>
-                    <a href="#new">new games</a>
-                    <a href="#action">action games</a>
-                    <a href="#contact">contact</a>
-                </div>
-            </div>
-
-            <!-- Notification -->
-            <div class="notification">
-                <div class="notification-box">
-                    <i class='bx bx-check-circle bx-tada' ></i>
-                    <p>Congratulation, Your game download successfully</p>
-                </div>
-                <div class="notification-box">
-                    <i class='bx bxs-x-circle'></i>
-                    <p>Could not apply changes.</p>
-                </div>
-            </div>
-
+      <!-- navbar -->
+      <div class="nav container">
+        <!-- logo -->
+        <a href="#home" class="logo">Game <span>Store</span></a>
+        <!-- nav icons -->
+        <div class="nav-icons">
+          <i class="bx bx-bell bx-tada" id="bell-icon"><span></span></i>
+          <i class="bx bx-download"></i>
+          <div class="menu-icon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
         </div>
+        <!-- menu -->
+        <div class="menu">
+          <img src="./images/games-icon-png.png" alt="" />
+          <div class="navbar">
+            <a href="#home">home</a>
+            <a href="#trending">trending</a>
+            <a href="#new">new games</a>
+            <a href="#action">action games</a>
+            <a href="#contact">contact</a>
+          </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="notification">
+          <div class="notification-box">
+            <i class="bx bx-check-circle bx-tada"></i>
+            <p>Congratulation, Your game download successfully</p>
+          </div>
+          <div class="notification-box">
+            <i class="bx bxs-x-circle"></i>
+            <p>Could not apply changes.</p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Home section -->
 
     <section class="home container" id="home">
-        <img src="./images/home1.jpg" alt="">
-        <div class="home-text">
-            <h1>Battle royale</h1>
-            <a href="#" class="btn">available now</a>
-        </div>
+      <img src="./images/home1.jpg" alt="" />
+      <div class="home-text">
+        <h1>Battle royale</h1>
+        <a href="#" class="btn">available now</a>
+      </div>
     </section>
 
     <!-- Trending section start -->
     <section class="trending container" id="trending">
-        <div class="heading">
-            <i class='bx bx-home-heart'></i>
-            <h2>trending games</h2>
+      <div class="heading">
+        <i class="bx bx-home-heart"></i>
+        <h2>trending games</h2>
+      </div>
+      <!-- content -->
+      <div class="trending-content swiper">
+        <div class="swiper-wrapper">
+          <!-- slide1 -->
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./images/trending1.jpeg" alt="" />
+              <div class="box-text">
+                <h2>wild rift</h2>
+                <h3>moba games</h3>
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="" class="box-btn"><i class="bx bxs-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide2 -->
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./images/trending2.jpeg" alt="" />
+              <div class="box-text">
+                <h2>area f2</h2>
+                <h3>FPS games</h3>
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="" class="box-btn"><i class="bx bxs-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide3 -->
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./images/trending3.jpeg" alt="" />
+              <div class="box-text">
+                <h2>auto chess</h2>
+                <h3>chess</h3>
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="" class="box-btn"><i class="bx bxs-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide4 -->
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./images/trending4.jpeg" alt="" />
+              <div class="box-text">
+                <h2>war robots</h2>
+                <h3>action games</h3>
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="" class="box-btn"><i class="bx bxs-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- slide5 -->
+           <div class="swiper-slide">
+            <div class="box">
+              <img src="./images/trending5.jpeg" alt="" />
+              <div class="box-text">
+                <h2>survival heroes</h2>
+                <h3>MOBA</h3>
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="" class="box-btn"><i class="bx bxs-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide6 -->
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./images/trending6.jpeg" alt="" />
+              <div class="box-text">
+                <h2>warface</h2>
+                <h3>FPS games</h3>
+                <div class="rating-download">
+                  <div class="rating">
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star"></i>
+                    <i class="bx bxs-star-half"></i>
+                    <span>4.7</span>
+                  </div>
+                  <a href="#" class="box-btn"><i class="bx bxs-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- content -->
-        <div class="trending-content swiper">
-            
-        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
     <!-- Trending section ends -->
 
-
-
-
-
     <!-- link to JS -->
     <script src="./js/script.js"></script>
-
-</body>
-
+  </body>
 </html>

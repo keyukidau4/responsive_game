@@ -47,6 +47,10 @@ i {
     cursor: pointer;
 }
 
+span{
+    color: var(--text-color);
+}
+
 .container {
     max-width: 1068px;
     margin: auto;
@@ -299,8 +303,53 @@ header .logo {
 }
 
 /* Trending */
+.swiper-pagination-bullet-active {
+    background: var(--swiper-pagination-color,var(--main-color)) !important;
+}
 
+.box{
+    margin-bottom: 2rem;
+}
 
+.box img{
+    height: 150px;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.box img:hover{
+    transform: scale(.9);
+    border: 1px solid var(--main-color);
+}
+
+.box .box-text h2:hover, h3:hover{
+    color: var(--main-color);
+}
+
+.box .rating-download{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .rating i{
+    color: goldenrod;
+}
+
+.box .box-btn .bx{
+    padding: 8px;
+    background: var(--text-color);
+    border-radius: 50%;
+    color: var(--dark-color);
+    font-weight: 400;
+    font-size: 1.6rem;
+    transform: translateY(-.5rem);
+}
+
+.box .box-btn i:hover{
+    color: var(--main-color);
+    transform: scale(.9);
+    background-color: var(--dark-color);
+}
 
 
 @media(max-width:768px){
