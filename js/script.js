@@ -19,7 +19,7 @@ bellIcon.addEventListener("mouseout", () => {
   bell.classList.remove("active");
 });
 
-// slide swiper
+// trending slide swiper
 
 var swiper = new Swiper(".trending-content", {
   slidesPerView: 1,
@@ -27,6 +27,10 @@ var swiper = new Swiper(".trending-content", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  autoplay:{
+    delay:5000,
+    disableOnInteraction:false,
   },
   breakpoints: {
     640: {
@@ -41,5 +45,28 @@ var swiper = new Swiper(".trending-content", {
       slidesPerView: 5,
       spaceBetween: 20,
     },
+  },
+});
+
+//new effect coverflow swiper
+
+var swiper1 = new Swiper(".new-content", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  autoplay:{
+    delay:5000,
+    disableOnInteraction:false,
+  },
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
   },
 });
