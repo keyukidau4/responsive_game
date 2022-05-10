@@ -13,6 +13,10 @@
   transition: all 0.4s linear;
 }
 
+html::-webkit-scrollbar{
+    display: none;
+}
+
 :root {
   --main-color: #fa5353;
   --dark-color: #1b182b;
@@ -422,6 +426,23 @@ h3:hover {
 .footer span{
     font-size: 2rem;
     color: var(--text-color);
+}
+
+/* scroll bar */
+
+.progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 300;
+    width: 100%;
+}
+
+.progress-bar{
+    height: 4px;
+    background: var(--main-color);
+    width: 0%;
 }
 
 @media (max-width: 768px) {
